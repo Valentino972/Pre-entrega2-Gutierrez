@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+/* reset */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* estilos generales */
+body{
+font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+
+
+#mainheader {
+  height: 100px;
+  background-color: rgb(240, 233, 233);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  
+  }  
+
+header nav ul{
+  list-style: none;
+}
+header nav ul li{
+  display: inline-block ;
+  text-transform: uppercase;
+  margin-left: 25px;
+  padding: 2px;
+  font-size: 0.80rem;
+  font-weight: 700;
+  margin-top: 10px;
+  
+  
+}
+
+nav ul li a{
+  text-decoration: none;
+  color:rgb(29, 142, 29);
+  
+}
+nav ul li a:hover {
+  font-size: 14px;
+  color: rgb(6, 56, 6);
+}
+.img-bk {
+  height: 500px;
+  margin: 0 20px;
+  padding: 0;
+  background-image: url(../img/fondo-verde.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: right;
+}
+.txt-cont {
+  margin: 200px 20px;
+}
+
+.img-bk h1 {
+  font-size: 3.5rem;
+  color: rgb(243, 239, 239);
+  
+}
+
+.tit-2 {
+display: flex;
+}
+.resaltar {
+  background-color: rgb(250, 250, 250);
+  opacity: 0.5;
+  color: black;
+  margin-left: 25px;
+}
+/* Grid */
+.contenedor-grid {
+  display: flex;
+  margin-top: 60px;
+  gap: 40px;
+
+}
+.textos {
+  text-align: center;
+  margin: 0 20px;
+  align-items: center;
+}
+.caja-grid {
+  display: grid;
+  grid-template-columns: 300px 300px;
+  grid-template-rows: 300px 300px;
+  float: right;
+  padding: 20px;
+  margin-left: 160px;
+  margin-top: 50px;
+}
+.caja-1 {
+  height: 300px;
+  width: 300px;
+  background-image: url(../img/galpon-bolsas-2.jpg);
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  background-size: cover;
+}
+.caja-2 {
+  height: 300px;
+  width: 300px;
+  background-image: url(../img/23-c.jpg);
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  background-size: cover;
+}
+.caja-3 {
+  height: 300px;
+  width: 300px;
+  background-image: url(../img/galpon-bolsas-1.jpg);
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  background-size: cover;
+}
+.caja-4 {
+  height: 300px;
+  width: 300px;
+  background-image: url(../img/11-c.jpg);
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  background-size: cover;
+}
+
+
+/* Banner-1 */
+.contenedor-flex {
+  display: flex;
+  justify-content: center;
+}
+.contenedor-txt {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.text-green {
+  text-transform: uppercase;
+  margin-bottom: 50px ;
+  color: rgb(6, 56, 6);
+}
+
+.btn-flex {
+  display: flex;
+  justify-content: center;
+}
+.btn-per {
+  color: #fff;
+  background-color: green;
+  text-decoration: none;
+  border-radius: 15%;
+  padding: 5px;
+  margin: 10px;
+}
+
+
+/* estilos del main */
+
+main{
+  padding: 25px;
+}
+main h1 {
+  text-align: center;
+}
+
+.textos {
+  margin: 10px 0;
+  display: inline-block;
+  text-align: left;
+  padding: 20px; 
+  display: flex;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+
+
+main h1 {
+  text-transform: uppercase;
+  
+}
+/* Footer */
+.container-3 {
+  margin: 0 auto;
+
+}
+aside {
+  background-image: url(../img/bram-naus-hgoIR_BbMVE-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 220px;
+  margin: 0 auto;
+}
+.cont-flex {
+  display: flex;
+  justify-content: center;
+}
+.texto-boton {
+  margin-top: 70px; 
+}
+.texto-white {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+.btn-txt {
+  color: #fff;
+  background-color: rgb(55, 173, 55);
+  border-radius: 30px ;
+  margin-left: 220px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+}
+
+
+.contenedor-3 {
+  background-color: green;
+  height: 180px;
+  margin: 0 auto;
+}
+.logo-txt {
+  display: flex;
+  justify-content: center;
+}
+.txt-gray-light {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 700;
+  color: gray;
+  opacity: 0.6;
+  display: flex;
+  justify-content: center;
+  
+}
+.contenedor-4 {
+  background-color: rgb(55, 173, 55);
+  
+  height: 150px;
+  margin: 0 auto;
+}
+
+/* estilos pag contacto */
+.form-info{
+  width: 400px;
+  padding: 30px;
+  margin: 20px;
+  margin-top: 100px;
+  border-radius: 4px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+}
+.controles{
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 18px;
+  
+}
+
+/* Media celular */
+@media screen and (max-width:768px) {
+  #mainheader {
+  display: flex;
+  flex-direction: column;
+  }
+}
+
+
+
