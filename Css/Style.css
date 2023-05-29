@@ -303,8 +303,11 @@ aside {
   }
   .caja-grid {
     width: 200px;
-    margin: auto 0;
+    margin: 0;
     
+  }
+  .textos {
+    font-size: 0.8rem;
   }
 }
 
