@@ -11,7 +11,12 @@ body{
 font-family: 'Source Sans Pro', sans-serif;
 }
 
-
+.logo {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+  margin: 4px;
+}
 
 
 #mainheader {
@@ -95,8 +100,7 @@ display: flex;
   grid-template-rows: 300px 300px;
   float: right;
   padding: 20px;
-  margin-left: 160px;
-  margin-top: 50px;
+  
 }
 .caja-1 {
   height: 300px;
@@ -279,6 +283,28 @@ aside {
   #mainheader {
   display: flex;
   flex-direction: column;
+  }
+  header nav ul li {
+    font-size: 12px;
+    margin-left: 8px;
+  }
+  .container-1 {
+    width: 100%;
+  }
+  body {
+    width: 100%;
+  }
+  .contenedor-2 {
+    width: 100%;
+    }
+
+  .contenedor-grid {
+    flex-direction: column;
+  }
+  .caja-grid {
+    width: 200px;
+    margin: auto 0;
+    
   }
 }
 
