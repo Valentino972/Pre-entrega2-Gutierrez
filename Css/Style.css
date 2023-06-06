@@ -8,7 +8,8 @@
 }
 /* estilos generales */
 body{
-font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color:rgb(255, 253, 253);
 }
 
 .logo {
@@ -16,17 +17,15 @@ font-family: 'Source Sans Pro', sans-serif;
   text-decoration: none;
   color: black;
   margin: 4px;
+  padding: 15px;
 }
 
 
 #mainheader {
   height: 100px;
-  background-color: rgb(240, 233, 233);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 5px;
-  
   }  
 
 header nav ul{
@@ -46,15 +45,14 @@ header nav ul li{
 
 nav ul li a{
   text-decoration: none;
-  color:rgb(29, 142, 29);
+  color:rgb(40, 182, 40);
   
 }
 nav ul li a:hover {
-  font-size: 14px;
-  color: rgb(6, 56, 6);
+  color: rgb(9, 79, 9);
 }
 .img-bk {
-  height: 500px;
+  height: 300px;
   margin: 0 20px;
   padding: 0;
   background-image: url(../img/fondo-verde.jpg);
@@ -64,7 +62,7 @@ nav ul li a:hover {
   justify-content: right;
 }
 .txt-cont {
-  margin: 200px 20px;
+  margin: 50px 20px;
 }
 
 .img-bk h1 {
@@ -82,61 +80,52 @@ display: flex;
   color: black;
   margin-left: 25px;
 }
+
+
 /* Grid */
 .contenedor-grid {
-  display: flex;
-  margin-top: 60px;
-  gap: 40px;
-
-}
-.textos {
-  text-align: center;
-  margin: 0 20px;
-  align-items: center;
-}
-.caja-grid {
   display: grid;
-  grid-template-columns: 300px 300px;
-  grid-template-rows: 300px 300px;
-  float: right;
-  padding: 20px;
+  grid-template-columns:1fr 1fr;
+  grid: template rows 0;
+  height: 600px;
+  width: 100%;
+  background-color: rgb(246, 246, 246);
+  margin-top: 10px;
+}
+.imagen-br{
+  height: 200px;
+  width: 200px;
+  background-image: url(../img/web-developer-vs-software-engineer-man-with-laptop.webp);
+  background-size:cover ;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 5rem;
+}
+.grid-1{
+  border-bottom: 1px solid black;
+}
+.texto-1{
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 2rem;
+  color: #2e2e2e;
+  font-weight: 600;
+}
+.grid-2{
+  border: 1px solid black;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+.texto-2{
+  text-align: center;
+  margin-top: 12rem;
+  font-size: 1.1rem;
+  color: #2e2e2e;
+  font-weight: 400;
   
 }
-.caja-1 {
-  height: 300px;
-  width: 300px;
-  background-image: url(../img/galpon-bolsas-2.jpg);
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-  background-size: cover;
-}
-.caja-2 {
-  height: 300px;
-  width: 300px;
-  background-image: url(../img/23-c.jpg);
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
-  background-size: cover;
-}
-.caja-3 {
-  height: 300px;
-  width: 300px;
-  background-image: url(../img/galpon-bolsas-1.jpg);
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
-  background-size: cover;
-}
-.caja-4 {
-  height: 300px;
-  width: 300px;
-  background-image: url(../img/11-c.jpg);
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
-  background-size: cover;
-}
-
-
-/* Banner-1 */
+/* Productos destacados */
 .contenedor-flex {
   display: flex;
   justify-content: center;
@@ -152,24 +141,28 @@ display: flex;
   color: rgb(6, 56, 6);
 }
 
-.btn-flex {
+.boton-flex {
   display: flex;
   justify-content: center;
 }
 .btn-per {
-  color: #fff;
   background-color: green;
+  color: #fff;
+  font-size: 0.8rem;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 25px;
+  padding: 8px;
   text-decoration: none;
-  border-radius: 15%;
-  padding: 5px;
-  margin: 10px;
+  width: 120px;
+  height: 35px;
+  margin: 20px;
 }
 
 
 /* estilos del main */
-
-main{
-  padding: 25px;
+.bk-gray{
+  background-color: rgb(242, 242, 242);
 }
 main h1 {
   text-align: center;
@@ -193,10 +186,7 @@ main h1 {
   
 }
 /* Footer */
-.container-3 {
-  margin: 0 auto;
 
-}
 aside {
   background-image: url(../img/bram-naus-hgoIR_BbMVE-unsplash.jpg);
   background-size: cover;
@@ -210,7 +200,8 @@ aside {
   justify-content: center;
 }
 .texto-boton {
-  margin-top: 70px; 
+  margin-top: 70px;
+  display: flex; 
 }
 .texto-white {
   text-transform: uppercase;
@@ -218,22 +209,29 @@ aside {
   font-weight: 500;
   color: #ffffff;
 }
-.btn-txt {
+.btn-footer{
+  display: flex;
+  justify-content: center;
+
+}
+.btn-footer a{
+  background-color: green;
   color: #fff;
-  background-color: rgb(55, 173, 55);
-  border-radius: 30px ;
-  margin-left: 220px;
+  font-size: 0.8rem;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 25px;
+  padding: 8px;
+  margin-top: 5px;
   text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: 500;
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px;
+  width: 180px;
+  height: 40px;
+  
 }
 
 
 .contenedor-3 {
-  background-color: green;
+  background-color: rgb(33, 79, 33);
   height: 180px;
   margin: 0 auto;
 }
@@ -249,14 +247,18 @@ aside {
   opacity: 0.6;
   display: flex;
   justify-content: center;
+  margin-top: 3.5rem;
   
 }
 .contenedor-4 {
-  background-color: rgb(55, 173, 55);
-  
+  background-color: rgb(34, 124, 34);
   height: 150px;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
+
 
 /* estilos pag contacto */
 .form-info{
@@ -285,8 +287,22 @@ aside {
   flex-direction: column;
   }
   header nav ul li {
-    font-size: 12px;
-    margin-left: 8px;
+    font-size: 10px;
+    text-align: center;
+    margin-left: 18px;
+  }
+  header nav ul{
+    display: flex;
+    flex-direction: row;
+  }
+  .img-bk{
+    margin-top: 10px;
+    height: 10rem;
+    width: 100%;
+    margin-left: -1px;
+  }
+  .img-bk h1{
+    font-size: 2rem;
   }
   .container-1 {
     width: 100%;
@@ -299,15 +315,46 @@ aside {
     }
 
   .contenedor-grid {
+    height: 300px;
+    width: 100%;
+    background-color:rgb(242, 242, 242) ;
+  }
+  .imagen-br{
+    height: 120px;
+    width: 120px;
+  }
+  .texto-1 {
+    font-size: 1rem;
+    margin-top: 1em;
+  }
+  .texto-2 p{
+    font-size: 0.7rem;
+    margin-top: -7rem;
+  }
+  .grid-1, .grid-2{
+    height: 320px;
+  }
+  .text-green{
+    font-size: 1.2rem;
+  }
+  .texto-white{
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .texto-boton{
+    display: flex;
     flex-direction: column;
   }
-  .caja-grid {
-    width: 200px;
-    margin: 0;
+  .btn-txt{
+    font-size: 0.8rem;
     
   }
-  .textos {
-    font-size: 0.8rem;
+  /* page productos */
+  /* bootstrap flex */
+  .container-flex-productos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr); 
   }
 }
 
