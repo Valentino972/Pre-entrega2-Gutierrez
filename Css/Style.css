@@ -59,12 +59,18 @@ nav ul li a:hover {
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
-  justify-content: right;
+  justify-content: center;
+  align-items: center;
 }
 .txt-cont {
   margin: 50px 20px;
 }
-
+.container-productos{
+  margin-bottom: 200px;
+}
+.title{
+  margin-top: 20px;
+}
 .img-bk h1 {
   font-size: 3.5rem;
   color: rgb(243, 239, 239);
@@ -186,7 +192,6 @@ main h1 {
   
 }
 /* Footer */
-
 aside {
   background-image: url(../img/bram-naus-hgoIR_BbMVE-unsplash.jpg);
   background-size: cover;
@@ -258,6 +263,9 @@ aside {
   align-items: center;
   justify-content: space-evenly;
 }
+.container-3{
+  height: 20vh;
+}
 
 
 /* estilos pag contacto */
@@ -279,6 +287,23 @@ aside {
   font-size: 18px;
   
 }
+
+/* Estilos pag productos */
+.title h1{
+  font-size: 1.5rem;
+  color: rgb(25, 170, 25);
+  border: 1px solid rgb(59, 59, 59);
+  margin-bottom: 15px;
+}
+.container-productos{
+  display: flex;
+  justify-content: center;
+}
+.texto-boton{
+  display: flex;
+  flex-direction: column;
+}
+  
 
 /* Media celular */
 @media screen and (max-width:768px) {
@@ -351,11 +376,23 @@ aside {
   }
   /* page productos */
   /* bootstrap flex */
-  .container-flex-productos{
+  .title{
+    margin: 10px;
+  }
+  .title h1{
+    font-size: 1rem;
+    color: rgb(25, 170, 25);
+    border: 1px solid rgb(59, 59, 59);
+    margin-bottom: 5px;
+  }
+  
+  .container-productos{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, 1fr);
   }
+  
+  
 }
 
 
