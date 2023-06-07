@@ -58,6 +58,7 @@ nav ul li a:hover {
   background-image: url(../img/fondo-verde.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  opacity: 0.8;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -65,15 +66,12 @@ nav ul li a:hover {
 .txt-cont {
   margin: 50px 20px;
 }
-.container-productos{
-  margin-bottom: 200px;
-}
 .title{
   margin-top: 20px;
 }
 .img-bk h1 {
   font-size: 3.5rem;
-  color: rgb(243, 239, 239);
+  color: rgb(253, 253, 253);
   
 }
 
@@ -295,9 +293,15 @@ aside {
   border: 1px solid rgb(59, 59, 59);
   margin-bottom: 15px;
 }
-.container-productos{
+.padre-prod{
   display: flex;
   justify-content: center;
+}
+.container-productos{
+  margin-bottom: 200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 100px;
 }
 .texto-boton{
   display: flex;
