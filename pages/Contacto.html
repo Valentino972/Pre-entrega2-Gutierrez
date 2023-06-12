@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="../Css/Style.css">
         <!--link bootstrap-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/26ff7d524e.js" crossorigin="anonymous"></script>
         <title>JK | polietileno  </title>
     </head>
 </html>
@@ -16,7 +17,7 @@
 <!--Banner principal-->
 <div class="container-1">
 <header id="mainheader">
-    <img class="logo" src="" alt="logo de empresa">
+    <a class="logo" href="index.html">JK | Polietileno</a>
     <nav>
         <ul>
             <li>
@@ -38,19 +39,56 @@
     </nav>
 </header>
 </div>
-    
+    <!--Banner Principal-->
+        <div class="img-bk">
+            <div class="txt-prod">
+                <h1 style="text-transform: lowercase;"> <em> Contacto </em> </h1>
+            </div>
+        </div>
+
+    <!--Contenido principal-->
+<main>    
+    <div class="texto-contacto">
+        <p>Contáctese con nosotros, responderemos a la brevedad</p>
+    </div>    
+    <div class="container-form">
         <section class="form-info">
-            <input class="Controles" type="text" name="Nombre y Apellido" id="Nombre y Apellido" placeholder="Nombre y Apellido"> 
-            <input class="Controles" type="text" name="Dirección" id="Dirección" placeholder="Dirección"> 
-            <input class="Controles" type="text" name="Telefono" id="Telefono" placeholder="Telefono"> 
-            <input class="Controles" type="text" name="Asunto" id="Asunto" placeholder="Asunto"> 
-            <input class="Controles" type="text" name="Cometarios" id="Cometarios" placeholder="Cometarios"> 
-            <input class="Boton" type="submit" value="Enviar">
+            <div class="form-floating mb-4">
+                <input type="text" class="form-control" id="floatingInput" placeholder="Juan Gonzalez" style="border-color: rgb(41, 210, 41);">
+                <label for="floatingInput">Nombre y apellido</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" style="border-color: rgb(34, 182, 34);">
+                <label for="floatingInput">Telefono</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" style="border-color: rgb(27, 157, 27);">
+                <label for="floatingInput">Email</label>
+            </div>
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px; border-color: rgb(23, 115, 23);"></textarea>
+                <label for="floatingTextarea2">Comentario</label>
+            </div>
         </section>
+        <!--agregar boton "enviar" acá-->
+
+        <section class="redes">
+            <p>
+                <img src="../img/Recurso-2.png" alt="...">
+                <h2 style="margin-bottom: 30px; color: green;">11-5526-4934</h2>
+                <h3 class="contenido"></h3>
+                <h2 class="h2-contact" style="margin-bottom: 30px; font-weight: 300;">Siganos en nuestras redes</h2>
+                <div class="flex-static">
+                <link rel="stylesheet" href="https://www.instagram.com/valen._gutierrez/"> <i class="fa-brands fa-instagram" style="color: #1f512e;"></i>
+                    <i class="fa-brands fa-twitter" style="color: #1f512e;"></i>
+                    <i class="fa-brands fa-facebook" style="color: #1f512e;"></i>
+                </div>
+            </p>
+
+        </section>
+    </div>
         
-      
-        
-    
+</main>    
 <!--Pie de pagina-->
 <div class="container-3">     
     <footer>
@@ -59,7 +97,9 @@
                 <div class="cont-flex">
                     <div class="texto-boton">
                         <div class="texto-white">¿Desea recibir mas información?</div>
-                        <a href="../pages/Contacto.html" class="btn-txt border bk-green">Contáctenos ahora mismo</a>
+                        <div class="btn-footer">
+                            <a href="./pages/Contacto.html" class="btn-txt border bk-green">Contáctenos ahora mismo</a>
+                        </div>  
                     </div>
                 </div>
             </div>

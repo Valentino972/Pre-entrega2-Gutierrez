@@ -11,7 +11,6 @@ body{
   font-family: 'Source Sans Pro', sans-serif;
   background-color:rgb(255, 253, 253);
 }
-
 .logo {
   font-size: 1.5rem;
   text-decoration: none;
@@ -19,15 +18,12 @@ body{
   margin: 4px;
   padding: 15px;
 }
-
-
 #mainheader {
   height: 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   }  
-
 header nav ul{
   list-style: none;
 }
@@ -42,7 +38,6 @@ header nav ul li{
   
   
 }
-
 nav ul li a{
   text-decoration: none;
   color:rgb(40, 182, 40);
@@ -53,8 +48,7 @@ nav ul li a:hover {
 }
 .img-bk {
   height: 300px;
-  margin: 0 20px;
-  padding: 0;
+  padding: 0 0;
   background-image: url(../img/fondo-verde.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -70,11 +64,12 @@ nav ul li a:hover {
   margin-top: 20px;
 }
 .img-bk h1 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   color: rgb(253, 253, 253);
-  
+  background-color: #2d2b2bcb;
+  border-radius: 45%;
+  padding: 10px;
 }
-
 .tit-2 {
 display: flex;
 }
@@ -84,8 +79,6 @@ display: flex;
   color: black;
   margin-left: 25px;
 }
-
-
 /* Grid */
 .contenedor-grid {
   display: grid;
@@ -182,14 +175,7 @@ main h1 {
   text-align: center;
   margin-top: 40px;
 }
-
-
-
-main h1 {
-  text-transform: uppercase;
-  
-}
-/* Footer */
+/* Footers */
 aside {
   background-image: url(../img/bram-naus-hgoIR_BbMVE-unsplash.jpg);
   background-size: cover;
@@ -264,26 +250,58 @@ aside {
 .container-3{
   height: 20vh;
 }
-
-
-/* estilos pag contacto */
-.form-info{
-  width: 400px;
-  padding: 30px;
-  margin: 20px;
-  margin-top: 100px;
-  border-radius: 4px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: white;
+/* Estilos pag Nosotros */
+/* flex */
+.contenedor-flex-2{
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
-.controles{
-  width: 100%;
-  padding: 10px;
-  border-radius: 4px;
-  margin-bottom: 16px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 18px;
-  
+.contenedor-grid-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  height: 600px;
+  width: 50%;
+  background-color: rgba(206, 222, 218, 0.462);
+  padding: 20px 20px;
+  margin: 15px;
+  border-radius: 6%;
+  box-shadow: 0px 0px 20px 14px rgb(63, 88, 58);
+}
+.imagen-br-2{
+  height: 150px;
+  width: 150px;
+  background-image: url(../img/web-developer-vs-software-engineer-man-with-laptop.webp);
+  background-size:cover ;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+.texto-1b{
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 2rem;
+  color: #000000;
+  font-weight: 600;
+}
+.texto-2b{
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 1.3rem;
+  color: #000000;
+  font-weight: 300;
+  padding: 2rem;
+}
+/* bootstrap */
+.contenedor-bootstrap{
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(1, 1fr);
+  align-content: space-between;
+  margin-left: 200px;
+  margin-top: 20px;
 }
 
 /* Estilos pag productos */
@@ -307,7 +325,55 @@ aside {
   display: flex;
   flex-direction: column;
 }
+
+/* Estilos pages contacto */
+.texto-contacto{
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 300;
+  background-color: rgb(245, 244, 244);
+  height: 100px;
+  padding: 18px;
+}
+.contenido{
+  font-weight: 300;
+    color: #509f32;
+    margin: 30px 10px;
+    margin-right: 40px;
+    padding: 0 0 10px;
+    font-size: 2.2em;
+    border-bottom: solid 1px #CCC;
+}
+
+.container-form{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  margin: 0 auto;
+  width: 80%;
+}
+.form-info{
+  margin-left: 300px;
+  width: 400px;
+  padding: 30px;
+  border-radius: 4px;
+}
+.flex-static{
+display: flex;
+font-size: 35px;
+margin: 0 10px;
+gap: 20px;
+}
   
+/* Estilos pag encontranos */
+.tienda{
+  width: 100%;
+  padding: 10px 40px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
 
 /* Media celular */
 @media screen and (max-width:768px) {
@@ -378,25 +444,102 @@ aside {
     font-size: 0.8rem;
     
   }
+  
+    /* Estilos pag Nosotros */
+  .contenedor-flex-2{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 10px;
+  }
+  .contenedor-grid-2 {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 100%;
+    background-color: rgba(206, 222, 218, 0.462);
+    margin-left: 0px;
+  }
+  .imagen-br-2{
+    height: 150px;
+    width: 150px;
+    background-image: url(../img/web-developer-vs-software-engineer-man-with-laptop.webp);
+    background-size:cover ;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 3rem;
+  }
+  .texto-1b{
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: #000000;
+    font-weight: 600;
+  }
+  .texto-2b{
+    margin-top: 0.7rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #000000;
+    font-weight: 300;
+    padding: 2rem;
+  }
+  /* bootstrap */
+  .contenedor-bootstrap{
+    display: flex;
+    flex-direction: column;
+  }
   /* page productos */
   /* bootstrap flex */
-  .title{
-    margin: 10px;
-  }
-  .title h1{
-    font-size: 1rem;
-    color: rgb(25, 170, 25);
-    border: 1px solid rgb(59, 59, 59);
-    margin-bottom: 5px;
-  }
-  
-  .container-productos{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-  }
-  
-  
+    .title{
+      margin: 10px;
+    }
+    .title h1{
+      font-size: 1rem;
+      color: rgb(25, 170, 25);
+      border: 1px solid rgb(59, 59, 59);
+      margin-bottom: 5px;
+    }
+    
+    .container-productos{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
+    /* Page contacto */
+    .texto-contacto{
+      text-align: center;
+      font-size: 1.1rem;
+      font-weight: 400;
+      background-color: rgb(245, 244, 244);
+      height: 80px;
+      padding: 18px;
+    }
+    .contenido{
+      font-weight: 300;
+        color: #509f32;
+        width: 100%;
+        font-size: 2.2em;
+        border-bottom: solid 1px #CCC;
+    }
+    .h2-contact{
+      width: 100%;
+    }
+    .container-form{
+      display: grid;
+      grid-template-columns: repeat(1, 2fr);
+    }
+    .form-info{
+      width: 100%;
+      margin-left: 0px;
+      margin-top: -1px;
+    }
+    .flex-static{
+    display: flex;
+    font-size: 35px;
+    margin: 0 10px;
+    gap: 20px;
+    }
 }
 
 
